@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+     
+     function calculate()
+     {
+
+     let fc = document.getElementById("from").value;
+     console.log(fc);
+     let tc = document.getElementById("to").value;
+     let no = document.getElementById("no1").value;
+     let exchange = {
+        "$":{
+            'RS':80
+
+        },
+
+         "RS":{
+            "$":0.0119
+         }
+        }
+
+        
+         
+            let amount ;
+            amount = no * exchange.fc.tc;
+            document.getElementById("result").innerHTML = amount;
+        }
+
+    </script>
+</head>
+<body>
+    
+    Enter Amount <input type="number" placeholder="Enter Number" id="no1"> <br><br>
+
+    from  
+
+    <select  id="from">
+        <option value="$"> $</option>
+        <option value="RS"> RS</option>
+
+    </select>
+
+    <br><br>
+    to
+    <select name="" id="to">
+        <option value="$"> $</option>
+        <option value="RS"> RS</option>
+
+    </select>
+
+
+    <br>
+    <button onclick="calculate()">submit</button>
+    <br>
+    <p id = "result"></p>
+
+</body>
+</html> 
+ 
