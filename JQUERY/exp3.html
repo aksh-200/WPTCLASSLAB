@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.6.0.js"></script>
+    <script>
+
+       $().ready(()=>{
+
+        let arr = ["red" , "orange","purple"]
+        arr.forEach((ele)=>{
+            $("select").append(`<option>${ele}</option>`);
+            
+         })
+
+         $("#tf1").change(()=>{
+            let element = $("#tf1").val();
+
+            
+            $("select").append(`<option>${element}</option>`);
+         }
+         )
+
+
+       })
+
+    </script>
+</head>
+<body>
+    
+    <div>
+        Enter data : <input type="text" id="tf1"/>
+        <select></select>
+    </div>
+</body>
+</html>

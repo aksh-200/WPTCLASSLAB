@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script src="./jquery-3.6.0.js"></script>
+
+<script>
+       
+
+    $().ready(()=>{
+    
+        $("#b1").click(()=>{ console.log("Button clicked")})
+
+
+        $("#i1").change(()=>{
+
+             let str = $('#i1').val();
+             let us = str.toUpperCase();
+             $("textarea").html(`${us}`)
+             $("#k").html(`<b>${us}</b>`)  
+        })
+
+
+        $("#i2").blur(()=>
+        {     $("#l").html("")
+            let str1 = $('#i2').val();
+            $("#l").append(`${str1}`)
+        })
+
+        
+    })
+
+    </script>
+</head>
+<body>
+<input type="text" id="i1">
+<input type="button" value="ok" id ="b1">
+<textarea name="" id="td" cols="30" rows="10"></textarea>
+<input type="text" id ="i2">
+<p id="k"></p>
+<p id="l"></p>
+</body>
+</html>
