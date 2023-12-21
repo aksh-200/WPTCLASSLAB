@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script> 
+ function f1()
+ {
+      let str1 = document.getElementById("s1").value;
+      let us = str1.toUpperCase();
+      document.getElementById("result").innerHTML = "<b>"+us+"</b>";
+ }
+
+</script>
+
+</head>
+<body>
+    
+    <label >Enter sting </label>
+    
+    <input type="text" id="s1" placeholder="Enter string"><br>
+    <button onclick="f1()">submit</button>
+
+    <p id="result"></p>
+
+</body>
+</html>

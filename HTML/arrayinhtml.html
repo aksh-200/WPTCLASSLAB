@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+      let arr = [];
+
+        f1 = () => {
+        let s = " ";
+        let d = document.getElementById("d1").value;
+        arr.push(d);
+       
+        for(let i = 0;i<arr.length ; i++)
+        {
+          s = s + arr[i] + "     ,";
+         
+        }
+
+        document.getElementById("data").innerHTML = s;
+       
+      }
+
+    </script>
+
+    
+</head>
+<body>
+    
+  Enter no <input type="number" id="d1">
+  <br>
+  <button onclick="f1()">Submit data</button>
+  <!-- <br>
+  <button onclick="showdata()">show data</button>
+
+  <br><br> -->
+
+  <div id="data">
+
+  </div>
+
+  
+   
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <script>
+
+            function f1()
+            {
+            let x = parseInt(document.getElementById("n1").value);
+            let y = parseInt(document.getElementById("n2").value);
+
+            let op = (document.getElementById("operation").value)
+
+            let result;
+            switch(op)
+            {
+                case '+' : result = x + y; break;
+                case '-' : result = x - y; break;
+                case '*' : result = x * y; break;
+                case '/' : result = x / y; break;
+            }
+                document.getElementById("res").innerHTML=`ans${result}`;
+
+            }
+            
+
+        </script>
+
+    </head>
+    <body>
+        FirstNumber:<input type="number" name="" id="n1"><br>
+        SecondNumber:<input type="number" id="n2">
+
+        <select name="" id="operation" onchange="f1()">
+            <option >Select Opt</option>
+            <option >+</option>
+            <option >-</option>
+            <option >*</option>
+            <option >/</option>
+        </select>
+
+        <p id="res"></p>
+        
+    </body>
+</html>

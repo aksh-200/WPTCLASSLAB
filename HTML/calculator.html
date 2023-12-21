@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+     function f1()
+     {
+        let x = parseInt(document.getElementById("n1").value);
+        let y = parseInt(document.getElementById("n2").value);
+
+        let op = document.getElementById("operation").value;
+        console.log(op);
+        let result ;
+
+        switch(op)
+        {  
+            case '+' : result = x + y; break;
+            case '-' : result = x - y; break;
+            case '*' : result = x * y; break;
+            case '/' : result = x / y; break;
+        }
+        
+        
+        document.getElementById("result1").innerHTML =  result;
+     }
+    </script>
+</head>
+<body>
+    
+FirstNumber <input type="number" id="n1">&nbsp &nbsp &nbsp &nbsp; 
+SeconNumber <input type="number" name="" id="n2">  &nbsp &nbsp  ;
+
+<select id="operation" onchange="f1()">
+    <option>select op</option>
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+    <option>/</option>
+</select><br>
+
+<p  id="result1"></p>
+
+
+
+</body>
+</html>

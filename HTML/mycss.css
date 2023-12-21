@@ -1,0 +1,18 @@
+table,td{
+    border: solid 3px rgb(60, 76, 77); 
+
+}
+
+body{
+    background-color: rgb(214, 203, 188);
+}  
+
+#name
+{
+    text-align: center;
+
+}
+
+.main{
+margin: 10%;
+}
